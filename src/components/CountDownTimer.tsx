@@ -74,21 +74,16 @@ function CountDownTimer() {
     };
   }, [isActive]);
 
+
   return (
     <>
-      <div className="h-[18.75rem] w-[31.25rem] bg-slate-400 rounded-[1rem] shadow-orange-300 border-[#741f78] border-[.5rem] flex justify-center items-center flex-col ">
-        <h1 className="text-[1.875rem] font-[600] mb-[.4375rem]">
-          <hr />
-          <hr />
-          <hr />
+      <div className="h-[18.75rem] w-[360px] bg-slate-400 rounded-[1rem] shadow-orange-300 border-[#e8b9eb] border-[3px] flex justify-center items-center flex-col ">
+        <h1 className="text-[1.875rem] font-[700] mb-[.4375rem]">
           Count Down Timer
-          <hr />
-          <hr />
-          <hr />
         </h1>
-        <div className="flex gap-[1.25rem] mt-[.9375rem]">
+        <div className="flex gap-[15px] mt-[.9375rem]">
           <Input
-            className="w-[15.625rem] text-[.9375rem]"
+            className="w-[200px] text-[13px] "
             placeholder="Enter Duration in Seconds "
             type="number"
             onChange={(e) => {
@@ -98,7 +93,7 @@ function CountDownTimer() {
           />
           <Button onClick={setbtn}>Set</Button>
         </div>
-        <div className="text-[4.375rem] font-[600]">{timeformat(timeLeft)}</div>
+        <div className="text-[60px] font-[600]">{timeformat(timeLeft)}</div>
         <div className="flex gap-[1.875rem]  ">
           <Button onClick={startbtn}>Start</Button>
           <Button onClick={pausebtn}>Pause</Button>
