@@ -77,11 +77,11 @@ function CountDownTimer() {
 
   return (
     <>
-      <div className="h-[18.75rem] w-[360px] bg-slate-400 rounded-[1rem] shadow-orange-300 border-[#e8b9eb] border-[3px] flex justify-center items-center flex-col ">
+      <div className="h-[18.75rem] w-[340px] bg-slate-400 rounded-[1rem] shadow-orange-300 border-[#e8b9eb] border-[3px] flex justify-center items-center flex-col ">
         <h1 className="text-[1.875rem] font-[700] mb-[.4375rem]">
           Count Down Timer
         </h1>
-        <div className="flex gap-[15px] mt-[.9375rem]">
+        <div className="flex gap-[13px] mt-[.9375rem]">
           <Input
             className="w-[200px] text-[13px] "
             placeholder="Enter Duration in Seconds "
